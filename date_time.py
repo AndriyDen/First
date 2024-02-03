@@ -60,13 +60,13 @@ current_time = datetime.datetime.now()
 # difference = seventh_day_2020 - seventh_day_2019
 # print(difference)  # 365 days, 0:00:00
 # print(difference.total_seconds())  # 31536000.0
-# print(type(difference)) # datetime.timedelta
+# print(type(difference)) # datetime.ti7medelta
 # print(type(difference.total_seconds())) # float
 
 
 # first_d = datetime.datetime(2024, 2, 15, 15, 40)
 # second_d = datetime.timedelta(hours = 22)
-# together = first + second # Додаємо до певної дати визначений проміжок часу
+# together = first_d + second_d # Додаємо до певної дати визначений проміжок часу
 # print(together)
 
 """ toordinal - дні з початку ери"""
@@ -159,3 +159,6 @@ current_time = datetime.datetime.now()
 # # Конвертація у формат ISO 8601
 # iso_format_with_timezone = timezone_datetime.isoformat()
 # print(iso_format_with_timezone)
+
+print(datetime.datetime.today().toordinal())
+print(datetime.datetime.now().date().toordinal())
