@@ -1,7 +1,11 @@
-import datetime 
+from pathlib import Path
+import time
 
-# weekday пщвертає день тижня у форматі від 0 (понеділок) до 6 (неділя)
-specific_date1 = datetime.date(2020, 4, 26).weekday()
-print(specific_date1)
-specific_date2 = datetime.datetime(2020, 4, 25, 12, 45, 57, 34567).weekday()
-print(f"Today is: {specific_date2}")
+file_path = Path("C:/Users/Denysenko/Documents/Accounting policy_Goodyear_bilingual.docx")
+
+# Час створення та модифікації
+creation_time = file_path.stat().st_ctime
+modification_time = file_path.stat().st_mtime
+
+print(f"Час створення: {time.ctime(creation_time)}")
+print(f"Час модифікації: {time.ctime(modification_time)}")
