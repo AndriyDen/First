@@ -6,7 +6,7 @@ def get_numbers_ticket(min: int, max: int, quantity: int): # Функція пр
         1000 < max or \
         max <= 1 or \
         max - min <= 0 or \
-        quantity >= max - min: # Перевіряємо відповідність параметрів заданим обмеженням
+        quantity > max - min: # Перевіряємо відповідність параметрів заданим обмеженням
             return []
     else:
         a = range(min, max + 1)  # Беремо послідовність цифр від (min) до (max+1), так як останнє значення не включається
@@ -14,7 +14,7 @@ def get_numbers_ticket(min: int, max: int, quantity: int): # Функція пр
         k = sorted(k)
         return k
 
-lottery_numbers = get_numbers_ticket(1, 49, 6)
+lottery_numbers = get_numbers_ticket(10, 15, 5)
 print("Ваші лотерейні числа:", lottery_numbers)
                 
     

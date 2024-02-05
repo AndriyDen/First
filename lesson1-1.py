@@ -1,11 +1,11 @@
-from pathlib import Path
-import time
+list1 = ['1', '2', '', '3', '4', '']
+while True:
+    list1.remove('')
+    if "" not in list1:
+        break
+print(list1)
 
-file_path = Path("C:/Users/Denysenko/Documents/Accounting policy_Goodyear_bilingual.docx")
 
-# Час створення та модифікації
-creation_time = file_path.stat().st_ctime
-modification_time = file_path.stat().st_mtime
-
-print(f"Час створення: {time.ctime(creation_time)}")
-print(f"Час модифікації: {time.ctime(modification_time)}")
+import sys
+for arg in sys.argv:
+    print(arg)

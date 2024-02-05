@@ -1,0 +1,7 @@
+Alex Korp,3000
+Nikita Borisenko,2000
+Sitarama Raju,1000
+Maksim Ivanov,5000
+Ivan Maksimov,4500
+John,1000
+Cyrill,2500
